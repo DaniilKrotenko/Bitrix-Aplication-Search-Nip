@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'gusapi/gusapi' => array(
+            'pretty_version' => '3.3.2',
+            'version' => '3.3.2.0',
+            'reference' => '235234a12437e4c41bf3277f826dab25e8e6bdb8',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../gusapi/gusapi',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'nip24/client' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => '74e6888444238cc984b81167d5763870b189369c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nip24/client',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

@@ -1,0 +1,8 @@
+{
+    "require": {
+        "nip24/client": "^1.4",
+        "gusapi/gusapi": "^3.3",
+      "ext-json": "*",
+      "ext-curl": "*"
+    }
+}
