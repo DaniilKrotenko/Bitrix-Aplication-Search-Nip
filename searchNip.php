@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['nip'])) {
     $method = 'crm.company.list';
     $queryUrl = 'https://' . $_REQUEST['domain'] . '/rest/' . $method . '.json';
     $params = [
-        'select' => ['ID', 'TITLE', 'EMAIL', 'PHONE', 'WEB', 'UF_CRM_1700135057']
+        'select' => ['ID', 'TITLE', 'EMAIL', 'PHONE', 'WEB', '!A column with the company's nip numbers.!']
     ];
     $queryData = http_build_query(array_merge($params, array("auth" => $auth_id)));
 
