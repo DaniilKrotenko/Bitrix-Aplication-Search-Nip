@@ -34,15 +34,15 @@ $_SESSION['domain'] = $_REQUEST['DOMAIN'];
                 response = JSON.parse(response);
 
                 if (response.success) {
-                    // Перенаправление на страницу с подтверждением
+                    // Redirects to the confirmation page
                     window.location.href = 'nipSuccessSearched.php?data=' + encodeURIComponent(response.data);
                 } else {
-                    // Обработка ошибок
+                    // Error handling
                     console.error('Error:', response.error);
                 }
             },
             error: function (error) {
-                // Обработка ошибок
+                // Error handling
                 console.error('Error:', error);
             }
         });
