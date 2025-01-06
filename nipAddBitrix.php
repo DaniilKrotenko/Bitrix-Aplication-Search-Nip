@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['name'], $_POST['address'], $_POST['nip'], $_POST['regon'], $_SESSION['auth_id'], $_SESSION['domain'])) {
 
-    // Данные, которые вы хотите сохранить
+    // The data you want to save
     $name = $_POST['name'];
     $address = $_POST['address'];
     $nip = $_POST['nip'];
