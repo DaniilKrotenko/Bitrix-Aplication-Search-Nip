@@ -17,7 +17,7 @@ if (isset($_POST['name'], $_POST['address'], $_POST['nip'], $_POST['regon'], $_S
         'auth' => $auth,
         'fields' => array(
             'TITLE' => $name,
-            'UF_CRM_1700135057' => $nip,
+            '!A column with the company's nip numbers.!' => $nip,
            // 'UF_NIP' => $nip,
            // 'UF_REGON' => $regon,
             // 'PHONE' => array(array('VALUE' => $phone, 'VALUE_TYPE' => 'WORK')),
