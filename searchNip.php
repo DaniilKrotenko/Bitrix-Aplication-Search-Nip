@@ -5,15 +5,16 @@ require_once 'vendor/nip24/client/NIP24/NIP24Client.php';
 
 \NIP24\NIP24Client::registerAutoloader();
 
-$login = "WPoz5SUzCnyS";
-$password = "hEGbzsTJqvRM";
+// Login and password from nip24.pl account for API request
+$login = "login";
+$password = "password";
 $nip24 = new \NIP24\NIP24Client($login, $password);
 
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['nip'])) {
     $nip = $_POST['nip'];
     $auth_id = $_POST['auth_id'];
 
-    // Запрос к Битрикс24
+    // Request to Bitrix24
     $method = 'crm.company.list';
     $queryUrl = 'https://' . $_REQUEST['domain'] . '/rest/' . $method . '.json';
     $params = [
